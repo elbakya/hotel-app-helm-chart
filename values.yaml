@@ -1,0 +1,4 @@
+appName: app
+
+namespace: hotel-app
+image: elbakyan/hotel-app:0.1.3
