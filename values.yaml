@@ -3,9 +3,9 @@ appName: app
 namespace: hotel-app
 image:
   repository: elbakyan/hotel-app-rds
-  imageTag: "0.1.1"
+  imageTag: 0.1.1
 
 rdsHost: ""
 username: ""
 rdsPassword: ""
-portOfRds: ""
+portOfRds: "80"
