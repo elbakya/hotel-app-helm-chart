@@ -5,7 +5,7 @@ image:
   repository: elbakyan/hotel-app-rds
   imageTag: "0.1.1"
 
-rdsHost: ""
-username: ""
-rdsPassword: ""
+rdsHost: "local"
+username: "user"
+rdsPassword: "password"
 portOfRds: "80"
