@@ -1,11 +1,11 @@
-#appName: app
+appName: app
 
-#namespace: hotel-app
-#image:
-#  repository: elbakyan/hotel-app-rds
-#  imageTag: "0.1.1"
+namespace: hotel-app
+image:
+  repository: elbakyan/hotel-app-rds
+  imageTag: "0.1.1"
 
-#rdsHost: "local"
-#username: "user"
-#rdsPassword: "password"
-#portOfRds: "80"
+rdsHost: "local"
+username: "user"
+rdsPassword: "password"
+portOfRds: "80"
