@@ -26,7 +26,7 @@ spec:
       containers:
       - image: "{{.Values.image.repository}}:{{.Values.image.imageTag}}"
         imagePullPolicy: IfNotPresent
-        name: {{.Values.namespace}}
+        name:  external-secrets #{{.Values.namespace}}
         ports:
         - containerPort: 80
           protocol: TCP
