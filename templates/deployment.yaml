@@ -32,13 +32,25 @@ spec:
           protocol: TCP
         env:
         - name: RDSHOST
-          value: "{{.Values.rdsHost}}"
+          valueFrom:
+            secretKeyRef:
+              name: my-k8s-secret  # Name of the Kubernetes Secret
+              key: RDSHOST
         - name: USERNAME
-          value: "{{.Values.username}}"
+          valueFrom:
+            secretKeyRef:
+              name: my-k8s-secret  # Name of the Kubernetes Secret
+              key: USERNAME
         - name: RDSPASSWORD
-          value: "{{.Values.rdsPassword}}"
+          valueFrom:
+            secretKeyRef:
+              name: my-k8s-secret  # Name of the Kubernetes Secret
+              key: RDSPASSWORD
         - name: PORT
-          value: "{{.Values.portOfRds | default 80 }}"
+          valueFrom:
+            secretKeyRef:
+              name: my-k8s-secret  # Name of the Kubernetes Secret
+              key: PORT
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler
