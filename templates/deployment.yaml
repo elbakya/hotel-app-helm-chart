@@ -35,17 +35,17 @@ spec:
           valueFrom:
             secretKeyRef:
               name: my-k8s-secret  # Name of the Kubernetes Secret
-              key: RDSHOST
+              key: db-endpoint
         - name: USERNAME
           valueFrom:
             secretKeyRef:
               name: my-k8s-secret  # Name of the Kubernetes Secret
-              key: USERNAME
+              key: db-username
         - name: RDSPASSWORD
           valueFrom:
             secretKeyRef:
               name: my-k8s-secret  # Name of the Kubernetes Secret
-              key: RDSPASSWORD
+              key: db-password
         - name: PORT
           valueFrom:
             secretKeyRef:
