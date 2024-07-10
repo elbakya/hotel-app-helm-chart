@@ -36,21 +36,25 @@ spec:
             secretKeyRef:
               name: my-k8s-secret  # Name of the Kubernetes Secret
               key: db-endpoint
+              namespace: external-secret
         - name: USERNAME
           valueFrom:
             secretKeyRef:
               name: my-k8s-secret  # Name of the Kubernetes Secret
               key: db-username
+              namespace: external-secret
         - name: RDSPASSWORD
           valueFrom:
             secretKeyRef:
               name: my-k8s-secret  # Name of the Kubernetes Secret
               key: db-password
+              namespace: external-secret
         - name: PORT
           valueFrom:
             secretKeyRef:
               name: my-k8s-secret  # Name of the Kubernetes Secret
               key: PORT
+              namespace: external-secret
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler
