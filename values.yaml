@@ -9,4 +9,4 @@ rdsHost: "local"
 username: "user"
 rdsPassword: "password"
 portOfRds: "80"
-secretName: "secretName"
+secretName: secretName
