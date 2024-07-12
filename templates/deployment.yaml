@@ -53,7 +53,7 @@ spec:
           valueFrom:
             secretKeyRef:
               name: my-k8s-secret  # Name of the Kubernetes Secret
-              key: PORT
+              key: db-port
               #namespace: external-secrets
       dnsPolicy: ClusterFirst
       restartPolicy: Always
