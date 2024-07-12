@@ -26,7 +26,7 @@ spec:
       containers:
       - image: "{{.Values.image.repository}}:{{.Values.image.imageTag}}"
         imagePullPolicy: IfNotPresent
-        name:  external-secrets #{{.Values.namespace}}
+        name:  hotel-app
         ports:
         - containerPort: 80
           protocol: TCP
